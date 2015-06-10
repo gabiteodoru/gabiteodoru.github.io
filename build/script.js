@@ -15,10 +15,6 @@ var HEIGHT = 640;
 var svg = _d32['default'].select('svg');
 
 var circles = svg.selectAll('circle').data((0, _utils.randomNumbers)(3600, WIDTH));
-circleEnter.attr('opacity', function () {
-	return (Math.random() + 0.5) / 6;
-});
-
 
 var circleEnter = circles.enter().append('circle');
 
